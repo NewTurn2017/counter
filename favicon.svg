@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a2613"/>
+      <stop offset=".5" stop-color="#241608"/>
+      <stop offset="1" stop-color="#0d0703"/>
+    </linearGradient>
+    <linearGradient id="cell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#211c16"/>
+      <stop offset=".49" stop-color="#0e0b08"/>
+      <stop offset=".51" stop-color="#080605"/>
+      <stop offset="1" stop-color="#020201"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdf6"/>
+      <stop offset=".55" stop-color="#fff1d2"/>
+      <stop offset="1" stop-color="#f2cd86"/>
+    </linearGradient>
+    <clipPath id="cellClip">
+      <rect x="16" y="11" width="32" height="42" rx="6"/>
+    </clipPath>
+  </defs>
+
+  <!-- stage background -->
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="#e9c178" stroke-opacity=".45" stroke-width="2"/>
+
+  <!-- odometer cell -->
+  <rect x="16" y="11" width="32" height="42" rx="6" fill="url(#cell)" stroke="#e9c178" stroke-opacity=".35" stroke-width="1.5"/>
+
+  <!-- reel digits: partial 0 above, 1 centered, partial 2 below -->
+  <g clip-path="url(#cellClip)" font-family="Helvetica, Arial, sans-serif" font-weight="bold" text-anchor="middle">
+    <text x="32" y="13" font-size="26" fill="#fbf7ee" opacity=".35">0</text>
+    <text x="32" y="41" font-size="26" fill="url(#gold)">1</text>
+    <text x="32" y="69" font-size="26" fill="#fbf7ee" opacity=".35">2</text>
+  </g>
+
+  <!-- odometer split line -->
+  <rect x="16" y="31" width="32" height="2" fill="#000" opacity=".8"/>
+
+  <!-- flare sparkle -->
+  <g fill="#ffe9b8">
+    <path d="M53 7 L54.4 11.6 L59 13 L54.4 14.4 L53 19 L51.6 14.4 L47 13 L51.6 11.6 Z"/>
+  </g>
+</svg>
