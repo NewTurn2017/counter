@@ -2,6 +2,8 @@
 
 누적 판매량을 시네마틱 골드 오도미터로 카운트업하는 OBS용 카운터 오버레이입니다.
 
+**Live: https://counter.codewithgenie.com**
+
 ![1000만잔 카운터](og-image.png)
 
 ## 기능
@@ -30,11 +32,8 @@ open index.html
 
 ## 배포 (Vercel)
 
-```bash
-vercel --prod
-```
-
-배포 후 `index.html`의 `og:url` / `og:image` 주소를 실제 배포 URL로 변경하세요.
+GitHub `main` 브랜치에 push하면 Vercel이 자동으로 배포합니다.
+배포 도메인: [counter.codewithgenie.com](https://counter.codewithgenie.com)
 
 ## 에셋
 
